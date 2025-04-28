@@ -78,7 +78,7 @@ This project is a full-stack application that converts integers (1–3999) to Ro
     E2E Tests (Cypress):
 
     1. cd frontend
-    2. npm install
+    2. npm install (install cypress dependencies)
     3. cd ..
     4. docker-compose run cypress
 
@@ -86,7 +86,8 @@ This project is a full-stack application that converts integers (1–3999) to Ro
 
     docker-compose down
 
-<!-- Running Without Docker (Optional) 
+
+##Running Without Docker (Optional)## 
 
 Backend (Runs on http://localhost:8080) :
 1. cd backend
@@ -104,10 +105,10 @@ Cypress Tests:
 1. cd frontend
 2. npm install
 3. npx cypress run
--->
 
 
-Problem-Solving Approach and Solution :
+
+##Problem-Solving Approach and Solution## :
 
 The goal was to build a full-stack application that converts integers (1–3999) to Roman numerals, with a user-friendly frontend, a REST API backend, and E2E tests, all running in Docker. The app needed to handle invalid inputs gracefully and be accessible.
 
@@ -116,25 +117,26 @@ Approach
     Used React with React Spectrum to build a simple UI with a number input and a convert button.
     Made API calls to the backend using fetch, handling both successful responses and errors.
     Added client-side validation to display an error if no number is entered.
-    
-2.Backend:
+
+2.  Backend:
     Built a single /romannumeral endpoint with Express that accepts a query parameter.
     Implemented Roman numeral conversion logic using a lookup table approach for efficiency.
     Added input validation to return appropriate error messages and status codes (400 for invalid inputs, 200 for success).
 
-3.Logging and Monitoring:
+3. Logging and Monitoring:
     Logs are written to backend/app.log and the console using Winston.
     Prometheus metrics are available at http://localhost:8080/metrics (e.g., http_requests_total counter).
 
-4.Testing:
+4. Testing:
     Wrote Cypress E2E tests to cover successful conversions, error cases (invalid inputs, network errors), and accessibility.
     Stubbed API responses in Cypress to avoid network issues in the Docker environment (e.g., localhost resolution issues).
     Used cypress-axe to automate accessibility testing.
 
-5.Docker Setup:
+5. Docker Setup:
     Created a docker-compose.yml file to orchestrate the frontend, backend, and Cypress services.
     Used environment variables (e.g., CYPRESS_baseUrl) to ensure Cypress accesses the frontend correctly in the Docker network.
 
-Challenges and Solutions
+
+##Challenges and Solutions##
 
 Docker Networking: The frontend’s API calls to http://localhost:8080 failed in the Cypress container because localhost didn’t resolve to the backend. Solution: Stubbed API responses in Cypress tests to avoid real network requests.
