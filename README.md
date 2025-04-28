@@ -50,7 +50,7 @@ This project is a full-stack application that converts integers (1–3999) to Ro
 ### Steps to Build and Run
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/gaurikolhe/roman-numeral-converter.git
    cd adobe-genstudio-test
 2. **Build the Docker Containers**:
     docker-compose up --build -d
