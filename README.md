@@ -51,7 +51,7 @@ This project is a full-stack application that converts integers (1–3999) to Ro
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/gaurikolhe/roman-numeral-converter.git
-   cd adobe-genstudio-test
+   cd roman-numeral-converter
 2. **Build the Docker Containers**:
     docker-compose up --build -d
     **This builds and starts the backend (port 8080), frontend (port 3000), and cypress services.**
