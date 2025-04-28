@@ -54,14 +54,17 @@ This project is a full-stack application that converts integers (1–3999) to Ro
    cd roman-numeral-converter
 2. **Build the Docker Containers**:
     docker-compose up --build -d
-    **This builds and starts the backend (port 8080), frontend (port 3000), and cypress services.**
-    **The -d flag runs the containers in detached mode.**
+
+    <!-- This builds and starts the backend (port 8080), frontend (port 3000), and cypress services.**
+    The -d flag runs the containers in detached mode. -->
 3. **Access the Application**:
     Open your browser and navigate to http://localhost:3000.
     Enter a number between 1 and 3999, then click "Convert to Roman Numeral" to see the result.
 4. **Run The Tests**:
-    **Backend Unit Tests**:docker-compose exec backend npm test
-    **Frontend Unit Tests**:docker-compose exec frontend npm test
+    **Backend Unit Tests**:
+    1. docker-compose exec backend npm test
+    **Frontend Unit Tests**:
+    1. docker-compose exec frontend npm test
     **E2E Tests (Cypress)**:
     1. cd frontend
     2. npm install
