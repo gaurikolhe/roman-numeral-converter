@@ -52,25 +52,38 @@ This project is a full-stack application that converts integers (1–3999) to Ro
    ```bash
    git clone https://github.com/gaurikolhe/roman-numeral-converter.git
    cd roman-numeral-converter
+
 2. **Build the Docker Containers**:
+
     docker-compose up --build -d
 
-    <!-- This builds and starts the backend (port 8080), frontend (port 3000), and cypress services.**
-    The -d flag runs the containers in detached mode. -->
+    (This builds and starts the backend (port 8080), frontend (port 3000), and cypress services.**
+    The -d flag runs the containers in detached mode.)
+
 3. **Access the Application**:
+
     Open your browser and navigate to http://localhost:3000.
     Enter a number between 1 and 3999, then click "Convert to Roman Numeral" to see the result.
+
 4. **Run The Tests**:
-    **Backend Unit Tests**:
+
+    Backend Unit Tests:
+
     1. docker-compose exec backend npm test
-    **Frontend Unit Tests**:
+
+    Frontend Unit Tests:
+
     1. docker-compose exec frontend npm test
-    **E2E Tests (Cypress)**:
+
+    E2E Tests (Cypress):
+
     1. cd frontend
     2. npm install
     3. cd ..
     4. docker-compose run cypress
-5. **Stop the Container**:
+
+5. Stop the Container:
+
     docker-compose down
 
 <!-- Running Without Docker (Optional) 
@@ -93,8 +106,8 @@ Cypress Tests:
 3. npx cypress run
 -->
 
-<!-- 
-Problem-Solving Approach and Solution
+
+Problem-Solving Approach and Solution :
 
 The goal was to build a full-stack application that converts integers (1–3999) to Roman numerals, with a user-friendly frontend, a REST API backend, and E2E tests, all running in Docker. The app needed to handle invalid inputs gracefully and be accessible.
 
@@ -124,4 +137,4 @@ Approach
 
 Challenges and Solutions
 
-Docker Networking: The frontend’s API calls to http://localhost:8080 failed in the Cypress container because localhost didn’t resolve to the backend. Solution: Stubbed API responses in Cypress tests to avoid real network requests. -->
+Docker Networking: The frontend’s API calls to http://localhost:8080 failed in the Cypress container because localhost didn’t resolve to the backend. Solution: Stubbed API responses in Cypress tests to avoid real network requests.
