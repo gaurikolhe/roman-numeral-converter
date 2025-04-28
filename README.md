@@ -62,7 +62,11 @@ This project is a full-stack application that converts integers (1–3999) to Ro
 4. **Run The Tests**:
     **Backend Unit Tests**:docker-compose exec backend npm test
     **Frontend Unit Tests**:docker-compose exec frontend npm test
-    **E2E Tests (Cypress)**:docker-compose run cypress
+    **E2E Tests (Cypress)**:
+    1. cd frontend
+    2. npm install
+    3. cd ..
+    4. docker-compose run cypress
 5. **Stop the Container**:
     docker-compose down
 
