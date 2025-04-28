@@ -1,0 +1,122 @@
+{"level":"info","message":"Server running on http://localhost:8080"}
+{"level":"info","message":"Received request: query=1"}
+{"level":"info","message":"Converted 1 to I"}
+{"level":"info","message":"Received request: query=4"}
+{"level":"info","message":"Converted 4 to IV"}
+{"level":"info","message":"Received request: query=4"}
+{"level":"info","message":"Converted 4 to IV"}
+{"level":"info","message":"Received request: query=4"}
+{"level":"info","message":"Converted 4 to IV"}
+{"level":"info","message":"Received request: query=4"}
+{"level":"info","message":"Converted 4 to IV"}
+{"level":"info","message":"Received request: query=2"}
+{"level":"info","message":"Converted 2 to II"}
+{"level":"info","message":"Received request: query=22"}
+{"level":"info","message":"Converted 22 to XXII"}
+{"level":"info","message":"Received request: query=5"}
+{"level":"info","message":"Converted 5 to V"}
+{"level":"info","message":"Server running on http://localhost:8080"}
+{"level":"info","message":"Received request: query=3"}
+{"level":"info","message":"Converted 3 to III"}
+{"level":"info","message":"Received request: query=5"}
+{"level":"info","message":"Converted 5 to V"}
+{"level":"info","message":"Received request: query=8"}
+{"level":"info","message":"Converted 8 to VIII"}
+{"level":"info","message":"Received request: query=3999"}
+{"level":"info","message":"Converted 3999 to MMMCMXCIX"}
+{"level":"info","message":"Received request: query=4"}
+{"level":"info","message":"Converted 4 to IV"}
+{"level":"info","message":"Received request: query=9"}
+{"level":"info","message":"Converted 9 to IX"}
+{"level":"info","message":"Received request: query=15"}
+{"level":"info","message":"Converted 15 to XV"}
+{"level":"info","message":"Received request: query=5"}
+{"level":"info","message":"Converted 5 to V"}
+{"level":"info","message":"Received request: query=5"}
+{"level":"info","message":"Converted 5 to V"}
+{"level":"info","message":"Received request: query=6"}
+{"level":"info","message":"Converted 6 to VI"}
+{"level":"info","message":"Received request: query=1"}
+{"level":"info","message":"Converted 1 to I"}
+{"level":"info","message":"Received request: query=0"}
+{"level":"error","message":"Error: Input must be an integer between 1 and 3999"}
+{"level":"info","message":"Received request: query=-5"}
+{"level":"error","message":"Error: Input must be an integer between 1 and 3999"}
+{"level":"info","message":"Received request: query=-5"}
+{"level":"error","message":"Error: Input must be an integer between 1 and 3999"}
+{"level":"info","message":"Received request: query=5"}
+{"level":"info","message":"Converted 5 to V"}
+{"level":"info","message":"Received request: query=50000"}
+{"level":"error","message":"Error: Input must be an integer between 1 and 3999"}
+{"level":"info","message":"Received request: query=50"}
+{"level":"info","message":"Converted 50 to L"}
+{"level":"info","message":"Received request: query=2"}
+{"level":"info","message":"Converted 2 to II"}
+{"level":"info","message":"Received request: query=8"}
+{"level":"info","message":"Converted 8 to VIII"}
+{"level":"info","message":"Received request: query=5"}
+{"level":"info","message":"Converted 5 to V"}
+{"level":"info","message":"Received request: query=5"}
+{"level":"info","message":"Converted 5 to V"}
+{"level":"info","message":"Received request: query=1"}
+{"level":"info","message":"Converted 1 to I"}
+{"level":"info","message":"Received request: query=1"}
+{"level":"info","message":"Converted 1 to I"}
+{"level":"info","message":"Received request: query=3999"}
+{"level":"info","message":"Converted 3999 to MMMCMXCIX"}
+{"level":"info","message":"Received request: query=2025"}
+{"level":"info","message":"Converted 2025 to MMXXV"}
+{"level":"info","message":"Received request: query=0"}
+{"level":"error","message":"Error: Input must be an integer between 1 and 3999"}
+{"level":"info","message":"Received request: query=4000"}
+{"level":"error","message":"Error: Input must be an integer between 1 and 3999"}
+{"level":"info","message":"Received request: query=1"}
+{"level":"info","message":"Converted 1 to I"}
+{"level":"info","message":"Received request: query=3999"}
+{"level":"info","message":"Converted 3999 to MMMCMXCIX"}
+{"level":"info","message":"Received request: query=2025"}
+{"level":"info","message":"Converted 2025 to MMXXV"}
+{"level":"info","message":"Received request: query=0"}
+{"level":"error","message":"Error: Input must be an integer between 1 and 3999"}
+{"level":"info","message":"Received request: query=4000"}
+{"level":"error","message":"Error: Input must be an integer between 1 and 3999"}
+{"level":"info","message":"Received request: query=1"}
+{"level":"info","message":"Converted 1 to I"}
+{"level":"info","message":"Received request: query=3999"}
+{"level":"info","message":"Converted 3999 to MMMCMXCIX"}
+{"level":"info","message":"Received request: query=2025"}
+{"level":"info","message":"Converted 2025 to MMXXV"}
+{"level":"info","message":"Received request: query=0"}
+{"level":"error","message":"Error: Input must be an integer between 1 and 3999"}
+{"level":"info","message":"Received request: query=4000"}
+{"level":"error","message":"Error: Input must be an integer between 1 and 3999"}
+{"level":"info","message":"Received request: query=5"}
+{"level":"info","message":"Converted 5 to V"}
+{"level":"info","message":"Received request: query=0"}
+{"level":"error","message":"Error: Input must be an integer between 1 and 3999"}
+{"level":"info","message":"Received request: query=NaN"}
+{"level":"error","message":"Invalid input: query=NaN"}
+{"level":"info","message":"Received request: query=1"}
+{"level":"info","message":"Converted 1 to I"}
+{"level":"info","message":"Received request: query=NaN"}
+{"level":"error","message":"Invalid input: query=NaN"}
+{"level":"info","message":"Received request: query=undefined"}
+{"level":"error","message":"Invalid input: query=undefined"}
+{"level":"info","message":"Received request: query=undefined"}
+{"level":"error","message":"Invalid input: query=undefined"}
+{"level":"info","message":"Received request: query=undefined"}
+{"level":"error","message":"Invalid input: query=undefined"}
+{"level":"info","message":"Received request: query=1"}
+{"level":"info","message":"Converted 1 to I"}
+{"level":"info","message":"Received request: query=3999"}
+{"level":"info","message":"Converted 3999 to MMMCMXCIX"}
+{"level":"info","message":"Received request: query=2025"}
+{"level":"info","message":"Converted 2025 to MMXXV"}
+{"level":"info","message":"Received request: query=0"}
+{"level":"error","message":"Error: Input must be an integer between 1 and 3999"}
+{"level":"info","message":"Received request: query=4000"}
+{"level":"error","message":"Error: Input must be an integer between 1 and 3999"}
+{"level":"info","message":"Received request: query=4000"}
+{"level":"error","message":"Error: Input must be an integer between 1 and 3999"}
+{"level":"info","message":"Received request: query=4"}
+{"level":"info","message":"Converted 4 to IV"}

@@ -1,0 +1,37 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+  cypress:
+    image: cypress/included:14.3.2
+    depends_on:
+      - frontend
+      - backend
+    environment:
+      - CYPRESS_baseUrl=http://frontend:3000
+    working_dir: /e2e
+    volumes:
+      - ./frontend:/e2e
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
